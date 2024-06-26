@@ -562,24 +562,3 @@ function ohme_technical_exam_scripts_loader() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ohme_technical_exam_scripts_loader' );
-
-// Custom Google Font
-
-function my_theme_enqueue_styles() {
-    // Enqueue Google Font "Outfit"
-    wp_enqueue_style(
-        'google-fonts', // Handle for the stylesheet
-        'https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap', // URL of the Google Font
-        array(), // Dependencies (none in this case)
-        null // Version (null to prevent appending version query string)
-    );
-    
-    // Enqueue main stylesheet
-    wp_enqueue_style(
-        'main-styles', // Handle for the stylesheet
-        get_stylesheet_uri(), // URL of the main stylesheet
-        array('google-fonts'), // Dependencies (load after Google Fonts)
-        null // Version (null to prevent appending version query string)
-    );
-}
-add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');

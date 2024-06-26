@@ -403,28 +403,16 @@ body {
 					}
 			
 					h2 {
-						font-size: 2em;
+						font-size: 3em;
 						font-weight: 600;
-
-						@include media-breakpoint-up(lg) {
-							font-size: 3em;
-						}
-
 					}
 			
 					h3 {
-						font-size: 1.5em;
 						font-weight: 400;
 						margin-bottom: 1.5em;
-
-						@include media-breakpoint-up(lg) {
-							font-size: 1.75em;
-						}
 					}
 			
 					a {
-						transition: 0.3s all ease;
-
 						&.cta {
 							border-radius: 15px;
 							border-style: none;

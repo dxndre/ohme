@@ -374,12 +374,9 @@ img {
 $darkGrey : #032536;
 $paleGreen : #00ffd6;
 
-* {
-	transition: 0.3s all ease;
-}
-
 body {
 	font-family: "Outfit", sans-serif;
+	transition: 0.3s all ease;
 
 	#main {
 		padding: 0;
@@ -399,39 +396,26 @@ body {
 		
 				.hero-block {
 					h2, h3 {
-						text-shadow: 0px 0px 25px black;
+						text-shadow: 0px 0px 50px black;
 					}
 			
 					h2 {
-						font-size: 2em;
+						font-size: 3em;
 						font-weight: 600;
-
-						@include media-breakpoint-up(lg) {
-							font-size: 3em;
-						}
-
 					}
 			
 					h3 {
-						font-size: 1.5em;
 						font-weight: 400;
 						margin-bottom: 1.5em;
-
-						@include media-breakpoint-up(lg) {
-							font-size: 1.75em;
-						}
 					}
 			
 					a {
-						transition: 0.3s all ease;
-
 						&.cta {
 							border-radius: 15px;
 							border-style: none;
 							color: $darkGrey;
 							background-color: $paleGreen;
 							padding: 10px 15px;
-							transform: scale(1);
 		
 							&:hover {
 								transform: scale(1.1);
