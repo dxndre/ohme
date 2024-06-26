@@ -417,9 +417,13 @@ body {
 						font-weight: 400;
 						margin-bottom: 1em;
 
+						@include media-breakpoint-up(md) {
+							margin-bottom: 1.25em;
+						}
+
 						@include media-breakpoint-up(lg) {
 							font-size: 1.75em;
-							margin-bottom: 1.25em;
+							margin-bottom: 1.5em;
 						}
 					}
 			
